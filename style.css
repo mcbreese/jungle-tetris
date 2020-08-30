@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+/*Class to help see element outlines during development
+Remove in final version*/
+.yellow-border{
+  border:solid;
+  border-color: rgba(244,238,40,0.5);
+  border-radius: 0.5;
+}
+/*Get body element to fill the entire screen*/
+html, body{
+  overflow: auto;
+  margin: auto;
+  height: 100%;
+}
+/*Jungle background image*/
+body {
+  background-image: url(https://cdn.pixabay.com/photo/2019/05/09/15/08/jungle-4191340_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+h1{
+ text-align: center;
+ font-family: 'Do Hyeon', sans-serif;
+ font-size: 60px;
+}
+.container{
+  /*flex box to horizontally place elements, center of flex*/
+  display: flex;
+  justify-content: center;
+  /*Center the main div in the middle of the page*/
+  margin: auto;
+  width: 50%;
+  /*Move game down from title*/
+  margin-top: 80px;
+}
+.grid{
+  width: 200px;
+  height: 400px;
+  background-color:rgba(76,76,76,0.5);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid div {
+  height: 20px;
+  width: 20px;
+}
+
+.tetromino{
+  background-color: blue;
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+.mini-grid{
+  margin-top: 20px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color:rgba(76,76,76,0.5);
+  margin-left:50px;
+}
+
+.mini-grid div {
+  height: 20px;
+  width: 20px;
+}
+/*Styling for div with score and start button*/
+#score-and-btn{
+  margin-top: 60px;
+  text-align: center;
+  height: 120px;
+  width: 80px;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+#score-and-btn button{
+  margin-top: 20px;
+  width:80px;
+  height: 40px;
+  font-family: 'Do Hyeon', sans-serif;
+}
